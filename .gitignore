@@ -11,3 +11,6 @@ Thumbs.db
 
 # Dependencies (if we add Node later)
 node_modules/
+
+# Private files — CV, personal docs, anything not meant for the public repo
+private/

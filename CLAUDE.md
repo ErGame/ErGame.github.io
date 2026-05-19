@@ -3,7 +3,7 @@
 ## Project Overview
 Personal GitHub Pages site for the username **ErGame**, deployed at `https://ergame.github.io`.
 
-The site purpose is still being defined. We are exploring options together: personal portfolio, blog, project showcase, or a hybrid.
+**Direction: Personal Developer Portfolio.** Sections: Hero, About, Projects, Skills, Contact. Decided 2026-05-19 — chosen over blog (no time for regular writing), landing page (no product), interactive tool (low interest), and docs (no project to document).
 
 ## Tech Stack
 - **Plain HTML / CSS / JavaScript** — no build step, no framework
@@ -32,7 +32,9 @@ The site purpose is still being defined. We are exploring options together: pers
 - Accessibility: semantic HTML, alt text on images, sufficient color contrast
 
 ## Current Status
-- [ ] Decide on site purpose (portfolio / blog / showcase / hybrid)
-- [ ] Design homepage layout
+- [x] Decide on site purpose → **Portfolio**
+- [x] Design homepage layout (v1 mockup complete)
+- [ ] Replace placeholder content (About, Projects, Skills) with real info
+- [ ] Add real avatar/photo (currently "EG" placeholder)
 - [ ] Set up GitHub remote and enable GitHub Pages
-- [ ] Add real content
+- [ ] (Optional) Connect GitHub MCP server

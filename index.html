@@ -3,26 +3,225 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="ErGame — personal site" />
-  <title>ErGame</title>
+  <meta name="description" content="ErGame — Software developer portfolio" />
+  <title>ErGame · Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <span class="logo">ErGame</span>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="#top" class="logo">ErGame</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" class="nav-resume">Resume</a></li>
+      </ul>
+      <button class="theme-toggle" aria-label="Toggle theme" id="themeToggle">
+        <span class="theme-icon">◐</span>
+      </button>
     </nav>
   </header>
 
-  <main>
+  <main id="top">
+    <!-- HERO -->
     <section class="hero">
-      <h1>Hey, I'm ErGame</h1>
-      <p>This site is a work in progress — something cool is coming.</p>
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, my name is</p>
+        <h1 class="hero-name">ErGame.</h1>
+        <h2 class="hero-title">
+          <span class="typed-text" id="typedText">Software Developer</span><span class="cursor">|</span>
+        </h2>
+        <p class="hero-bio">
+          I'm a software developer who enjoys building well-crafted web
+          experiences — from quick utilities to full applications. I care
+          about clean code, thoughtful design, and shipping work that
+          actually solves the problem.
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">See My Work</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+      <aside class="hero-meta" aria-label="At a glance">
+        <dl>
+          <div><dt>Location</dt><dd>Available worldwide</dd></div>
+          <div><dt>Status</dt><dd>Open to opportunities</dd></div>
+          <div><dt>Focus</dt><dd>Web development</dd></div>
+        </dl>
+      </aside>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2 class="section-title"><span class="section-num">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a developer focused on building maintainable, useful web
+            applications. I like writing code that's clear enough for the
+            next person to pick up, and shipping work that earns trust
+            through reliability rather than noise.
+          </p>
+          <p>
+            My interests sit between engineering and product — understanding
+            the problem first, then choosing the right tools for the job.
+            This site is one of those projects: built from scratch, no
+            framework, just careful HTML, CSS, and JavaScript.
+          </p>
+          <p>A few technologies I've been working with recently:</p>
+          <ul class="tech-list">
+            <li>JavaScript (ES6+)</li>
+            <li>HTML5 &amp; CSS3</li>
+            <li>Git &amp; GitHub</li>
+            <li>Node.js</li>
+            <li>Responsive Design</li>
+            <li>Accessibility</li>
+          </ul>
+        </div>
+        <div class="about-image">
+          <div class="avatar-frame">
+            <div class="avatar-placeholder">EG</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2 class="section-title"><span class="section-num">02.</span> Projects</h2>
+      <p class="section-lead">
+        A small set of things I've built — each one chosen to show a
+        different side of how I work.
+      </p>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <header class="project-header">
+            <span class="project-index">01</span>
+            <h3 class="project-title">Project Title</h3>
+          </header>
+          <p class="project-desc">
+            A concise summary of the project's purpose, the problem it
+            addresses, and the role I played in delivering it.
+          </p>
+          <ul class="project-tech">
+            <li>HTML</li><li>CSS</li><li>JavaScript</li>
+          </ul>
+          <div class="project-links">
+            <a href="#">View Repository →</a>
+            <a href="#">Live Demo →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <header class="project-header">
+            <span class="project-index">02</span>
+            <h3 class="project-title">Project Title</h3>
+          </header>
+          <p class="project-desc">
+            A concise summary of the project's purpose, the problem it
+            addresses, and the role I played in delivering it.
+          </p>
+          <ul class="project-tech">
+            <li>React</li><li>Vite</li><li>REST API</li>
+          </ul>
+          <div class="project-links">
+            <a href="#">View Repository →</a>
+            <a href="#">Live Demo →</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <header class="project-header">
+            <span class="project-index">03</span>
+            <h3 class="project-title">Project Title</h3>
+          </header>
+          <p class="project-desc">
+            A concise summary of the project's purpose, the problem it
+            addresses, and the role I played in delivering it.
+          </p>
+          <ul class="project-tech">
+            <li>Node.js</li><li>Express</li>
+          </ul>
+          <div class="project-links">
+            <a href="#">View Repository →</a>
+            <a href="#">Live Demo →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2 class="section-title"><span class="section-num">03.</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Frontend</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3 / Sass</li>
+            <li>JavaScript</li>
+            <li>React</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Backend</h3>
+          <ul>
+            <li>Node.js</li>
+            <li>Express</li>
+            <li>REST APIs</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Tools</h3>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>VS Code</li>
+            <li>Figma</li>
+            <li>Linux / WSL</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Learning</h3>
+          <ul>
+            <li>TypeScript</li>
+            <li>Astro</li>
+            <li>Docker</li>
+            <li>System Design</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section-contact">
+      <h2 class="section-title centered"><span class="section-num">04.</span> Get in Touch</h2>
+      <p class="contact-intro">
+        I'm currently open to new opportunities and collaborations.
+        If you have a project, a role, or just want to chat —
+        I'd love to hear from you.
+      </p>
+      <a href="mailto:gjesus60@gmail.com" class="btn btn-primary btn-large">gjesus60@gmail.com</a>
+      <div class="social-links">
+        <a href="https://github.com/ErGame" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; <span id="year"></span> ErGame</p>
+  <footer class="site-footer">
+    <p>
+      Designed &amp; built by ErGame &middot;
+      &copy; <span id="year"></span>
+    </p>
   </footer>
 
   <script src="script.js"></script>
