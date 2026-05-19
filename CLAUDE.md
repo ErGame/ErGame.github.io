@@ -34,7 +34,16 @@ Personal GitHub Pages site for the username **ErGame**, deployed at `https://erg
 ## Current Status
 - [x] Decide on site purpose → **Portfolio**
 - [x] Design homepage layout (v1 mockup complete)
-- [ ] Replace placeholder content (About, Projects, Skills) with real info
-- [ ] Add real avatar/photo (currently "EG" placeholder)
+- [x] Replace placeholder content with real info from CV
+- [ ] Add real avatar/photo (currently "JG" placeholder)
 - [ ] Set up GitHub remote and enable GitHub Pages
 - [ ] (Optional) Connect GitHub MCP server
+
+## Owner Identity (from CV)
+- **Real name:** Jesús Gámez Larrad
+- **GitHub handle:** ErGame
+- **Location:** Seville, Spain
+- **Background:** Software Engineering degree (US, 2017–2022) + Master's in Computational Logic and AI (US, 2024–present)
+- **Experience:** Test Means Engineer at Airtificial (.NET fullstack + Oracle SQL, 2023–2025), Lead E-Powertrain & Electronic Systems at eUS Racing (Python ECU + electronics, 2018–2025)
+- **Languages:** Spanish (native), English (good), French (intermediate)
+- **CV file:** `private/CV_English.pdf` (gitignored — do not commit or quote phone number publicly)

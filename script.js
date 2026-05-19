@@ -3,9 +3,9 @@ document.getElementById('year').textContent = new Date().getFullYear();
 
 // ── Typed title rotation ─────────────────────────────────
 const titles = [
-  'Software Developer',
-  'Web Engineer',
-  'Independent Builder',
+  'Software Engineer',
+  'Fullstack .NET Developer',
+  'AI Master’s Student',
 ];
 
 const typedEl = document.getElementById('typedText');
