@@ -261,12 +261,18 @@ body {
 }
 
 .hero-title {
-  font-size: clamp(1.5rem, 5vw, 2.5rem);
+  font-size: clamp(1.3rem, 4.5vw, 2.5rem);
   font-weight: 600;
   color: var(--color-text-muted);
-  line-height: 1.1;
+  line-height: 1.25;
   margin-bottom: 2rem;
-  min-height: 1.2em;
+  min-height: 2.6em; /* reserve 2 lines on mobile so wrap doesn't shift layout */
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    min-height: 1.4em; /* desktop: single line is always enough */
+  }
 }
 
 .cursor {
